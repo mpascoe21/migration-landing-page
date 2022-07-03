@@ -8,43 +8,54 @@
     <script async defer src="script.js"></script>
     <title>Document</title>
   </head>
+
   <body>
     <nav class="nav">
-      <ul>
-        <li><a href="">Flexible Solutions</a></li>
-        <li><a href="">Security</a></li>
-        <li><a href="">Migration</a></li>
-        <li><a href="">Contact us</a></li>
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="">Flexible Solutions</a></li>
+        <li class="nav__list-item"><a href="">Security</a></li>
+        <li class="nav__list-item"><a href="">Migration</a></li>
+        <li class="nav__list-item"><a href="">Contact us</a></li>
       </ul>
     </nav>
 
     <main class="main">
       <section class="home">
+        <div class="home__logo-container">
+          <img
+            class="home__bubbles"
+            src="./assets/images/O2 Cluster Bubble - 500px - RGB@3x.png"
+            alt="bubbles"
+          />
+          <img
+            class="home__logo"
+            src="./assets/images/o2-business@3x.png"
+            alt="o2-logo"
+          />
+        </div>
         <img
-          class="home__bubbles"
-          src="./assets/images/O2 Cluster Bubble - 500px - RGB.png"
-          alt="bubbles"
+          class="home__img"
+          src="./assets/images/O2 Heroes_Key Visual 3_Tablet_GRAD@3x.png"
+          alt="business-lady"
         />
-        <img
-          class="home__logo"
-          src="./assets/images/o2-business.png"
-          alt="o2-logo"
-        />
-        <img src="./assets/images/img-header.png" alt="business-lady" />
-        <h1>Time to switch service providers?</h1>
-        <h4>Simple migration that puts you first</h4>
+        <h1 class="home__header">Time to switch service providers?</h1>
+        <h4 class="home__sub-header">Simple migration that puts you first</h4>
         <button class="button">SWITCH NOW</button>
-        <img src="./assets/images/icon-arrow.png" alt="arrow" />
+        <img
+          class="home__arrow"
+          src="./assets/images/icon-arrow.png"
+          alt="arrow"
+        />
       </section>
 
-      <section>
-        <p>
+      <section class="lets-talk">
+        <p class="lets-talk__text">
           Your business depends on your people and your customers staying
           connected. So you need a network you can trust. Make the switch to O
           today and get the very best mobile technology. Plus, support from our
           Digital Advisors who will be with you every step of the way.
         </p>
-        <button class="button">LET'S TALK'</button>
+        <button class="button lets-talk__button">LET'S TALK'</button>
       </section>
 
       <div class="think-about">
@@ -58,44 +69,57 @@
           </p>
           <div class="think-about__icon-container">
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--devices"
               src="./assets/images/-_Devices white.png"
               alt="icon-devices"
             />
-            <span class="think-about__icon-tag">Devices</span>
+            <span class="think-about__icon-tag think-about__icon-tag--devices"
+              >Devices</span
+            >
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--people"
               src="./assets/images/_People white.png"
               alt="icon-people"
             />
-            <span class="think-about__icon-tag">People</span>
+            <span class="think-about__icon-tag think-about__icon-tag--people"
+              >People</span
+            >
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--security"
               src="./assets/images/_Security white-25.png"
               alt="icon-security"
             />
-            <span class="think-about__icon-tag">Security</span>
+            <span class="think-about__icon-tag think-about__icon-tag--security"
+              >Security</span
+            >
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--how"
               src="./assets/images/_How white.png"
               alt="icon-how"
             />
-            <span class="think-about__icon-tag">How</span>
+            <span class="think-about__icon-tag think-about__icon-tag--how"
+              >How</span
+            >
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--who"
               src="./assets/images/_Who white.png"
               alt="icon-who"
             />
-            <span class="think-about__icon-tag">Who</span>
+            <span class="think-about__icon-tag think-about__icon-tag--who"
+              >Who</span
+            >
             <img
-              class="think-about__icon"
+              class="think-about__icon think-about__icon--where"
               src="./assets/images/_Where white.png"
               alt="icon-where"
             />
-            <span class="think-about__icon-tag">Where</span>
+            <span class="think-about__icon-tag think-about__icon-tag--where"
+              >Where</span
+            >
           </div>
         </section>
         <img
+          class="think-about__img"
           src="./assets/images/108290_GettyImages-503418498_RT@3x.png"
           alt=""
         />
@@ -107,12 +131,14 @@
           src="./assets/images/icon-success@3x.png"
           alt="icon-success"
         />
-        <h2 class="success__header">Success</h2>
-        <p class="success__text">
-          Our aim is to get it right first time, by getting to know your
-          business first-hand. So you can start seeing the bottom-line benefits
-          sooner.
-        </p>
+        <div class="success__text-container">
+          <h2 class="success__header">Success</h2>
+          <p class="success__text">
+            Our aim is to get it right first time, by getting to know your
+            business first-hand. So you can start seeing the bottom-line
+            benefits sooner.
+          </p>
+        </div>
       </section>
 
       <section class="how">
@@ -120,18 +146,28 @@
         <p class="how__text">
           The steps below provide the foundation for every project:
         </p>
-        <img src="./assets/images/img-icons-path-mobile.png" alt="" />
+        <img
+          class="how__img"
+          src="./assets/images/img-icons-path-mobile@2x.png"
+          alt=""
+        />
+        <p class="how__note">
+          *The above steps to migration apply to accounts with 500 or more
+          connections
+        </p>
       </section>
 
       <section class="advisors">
-        <h2 class="advisors__header">Meet our expert Digital Advisors</h2>
-        <p class="advisors__text">
-          Our team of Digital Advisors are there to make your migration as easy
-          as possible. They have plenty of experience helping businesses move to
-          O2. Whether you’re long-established or a start-up. Local or worldwide.
-          They get to the heart of your business and find a solution that works
-          for you.
-        </p>
+        <div class="advisors__text-container">
+          <h2 class="advisors__header">Meet our expert Digital Advisors</h2>
+          <p class="advisors__text">
+            Our team of Digital Advisors are there to make your migration as
+            easy as possible. They have plenty of experience helping businesses
+            move to O2. Whether you’re long-established or a start-up. Local or
+            worldwide. They get to the heart of your business and find a
+            solution that works for you.
+          </p>
+        </div>
         <img
           class="advisors__img"
           src="./assets/images/img-digital-advisors-no-clouds@3x.png"
@@ -146,33 +182,38 @@
           the process as smooth as possible. The steps below provide the
           foundation for every project:
         </p>
-        <img
-          src="./assets/images/icon-aware-winning-coverage@3x.png"
-          alt="icon-award-winning-coverage"
-        />
-        <h2 class="summary__header">Award-winning coverage</h2>
-        <p class="summary__text">
-          We were voted Best Network for Coverage in the Uswitch Mobile Awards
-          for 3 years running, from 2018 - 2020†
-        </p>
-        <img
-          src="./assets/images/icon-unrivalled-service@3x.png"
-          alt="icon-unrivalled-service"
-        />
-        <h2 class="summary__header">Unrivalled service</h2>
-        <p class="summary__text">
-          Dedicated business service teams and expert Digital Advisors means you
-          get the advice and support your business needs
-        </p>
-        <img
-          src="./assets/images/icon-greater-flexibility@3x.png"
-          alt="icon-greater-flexibility"
-        />
-        <h2 class="summary__header">Greater flexibility</h2>
-        <p class="summary__text">
-          We help your business thrive with solutions you can tailor to your
-          needs
-        </p>
+        <div class="summary__icon-container">
+          <img
+            class="summary__icon"
+            src="./assets/images/icon-aware-winning-coverage@3x.png"
+            alt="icon-award-winning-coverage"
+          />
+          <h2 class="summary__icon-header">Award-winning coverage</h2>
+          <p class="summary__text">
+            We were voted Best Network for Coverage in the Uswitch Mobile Awards
+            for 3 years running, from 2018 - 2020†
+          </p>
+          <img
+            class="summary__icon"
+            src="./assets/images/icon-unrivalled-service@3x.png"
+            alt="icon-unrivalled-service"
+          />
+          <h2 class="summary__icon-header">Unrivalled service</h2>
+          <p class="summary__text">
+            Dedicated business service teams and expert Digital Advisors means
+            you get the advice and support your business needs
+          </p>
+          <img
+            class="summary__icon"
+            src="./assets/images/icon-greater-flexibility@3x.png"
+            alt="icon-greater-flexibility"
+          />
+          <h2 class="summary__icon-header">Greater flexibility</h2>
+          <p class="summary__text">
+            We help your business thrive with solutions you can tailor to your
+            needs
+          </p>
+        </div>
         <p class="summary__note">
           †Best Network for Coverage: Uswitch 2018, 2019 and 2020 Awards.
           uswitch.com/mobiles/broadband-and-mobile-awards/
@@ -180,15 +221,15 @@
       </section>
 
       <section class="contact">
-        <div>
-          <h2>Get in touch</h2>
-          <p>
+        <div class="contact__header-container">
+          <h2 class="contact__header">Get in touch</h2>
+          <p class="contact__text">
             Talk to a Digital Advisor today and see how we can help. Whatever
             your need. However big or small. Fill out your details below and
             we’ll be in touch soon.
           </p>
         </div>
-        <form action="">
+        <form class="contact__form" action="">
           <label for="">Business type*</label>
           <input type="text" />
           <label for="">First name*</label>
@@ -206,40 +247,62 @@
           <label for="">Nature of enquiry</label>
           <input type="text" />
           <label for="">Other - comments</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea
+            class="contact__comments"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
           <div>
-            <p>* fields are mandatory</p>
+            <p class="contact__note">* fields are mandatory</p>
             <button class="button">GET IN TOUCH</button>
           </div>
-          <p>
+          <p class="contact__note">
             After submitting this form, you will get to hear about all the great
             stuff we’re doing by email or phone as your details will be added to
             our business marketing database. You can opt-out of receiving
             communications at any time by visiting our
-            <span class="text-style-1">Preference Centre</span>. Our
-            <span class="text-style-2">Privacy Policy.</span>
+            <a href="" class="contact__link">Preference Centre</a>. Our
+            <a href="" class="contact__link">Privacy Policy.</a>
           </p>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <img src="./assets/images/line@3x.png" alt="line" />
-      <ul>
-        <li>Terms & Conditions</li>
-        <li>Privacy policy</li>
-        <li>Cookie policy</li>
-        <li>Modern Slavery Statement</li>
-        <li>Access for all</li>
+      <img class="footer__line" src="./assets/images/line@3x.png" alt="line" />
+      <ul class="footer__list">
+        <li class="footer__list-item">Terms & Conditions</li>
+        <li class="footer__list-item">Privacy policy</li>
+        <li class="footer__list-item">Cookie policy</li>
+        <li class="footer__list-item">Modern Slavery Statement</li>
+        <li class="footer__list-item">Access for all</li>
       </ul>
-      <p>© 2020 Telefonica UK Limited.</p>
-      <img src="./assets/images/line@3x.png" alt="line" />
-      <div>
-        <img src="./assets/images/icon-facebook@3x.png" alt="icon-Facebook" />
-        <img src="./assets/images/icon-twitter@3x.png" alt="icon-twitter" />
-        <img src="./assets/images/icon-youtube@3x.png" alt="icon-youtube" />
+      <p class="footer__copyright">© 2020 Telefonica UK Limited.</p>
+      <img class="footer__line" src="./assets/images/line@3x.png" alt="line" />
+      <div class="footer__social-container">
+        <img
+          class="footer__social-icon"
+          src="./assets/images/icon-facebook@3x.png"
+          alt="icon-Facebook"
+        />
+        <img
+          class="footer__social-icon"
+          src="./assets/images/icon-twitter@3x.png"
+          alt="icon-twitter"
+        />
+        <img
+          class="footer__social-icon"
+          src="./assets/images/icon-youtube@3x.png"
+          alt="icon-youtube"
+        />
       </div>
-      <img src="./assets/images/logo-telefonica@3x.png" alt="logo-telefonica" />
+      <img
+        class="footer__logo-telefonica"
+        src="./assets/images/logo-telefonica@3x.png"
+        alt="logo-telefonica"
+      />
     </footer>
   </body>
 </html>

@@ -1,5 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+
+.nav {
+  background-color: #000066;
+  width: 100vw;
+  position: fixed;
+}
+.nav__list-item {
+  list-style: none;
+  padding: 3%;
+  cursor: pointer;
+}
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+.main {
+  text-align: center;
+}
+.main .home {
+  background-color: #0019a5;
+  color: #ffffff;
+  display: grid;
+  justify-items: center;
+  padding: 0 8.5%;
+}
+.main .home__logo-container {
+  display: grid;
+  width: 60%;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+}
+.main .home__bubbles {
+  width: 6.8rem;
+  height: 75%;
+  object-fit: cover;
+  padding-bottom: 10%;
+  grid-area: 1/2/span 2/span 2;
+}
+.main .home__logo {
+  width: 3.125rem;
+  grid-area: 3/2/2/span 1;
+  align-self: center;
+  align-self: center;
+  z-index: 5;
+}
+.main .home__img {
+  width: 120%;
+  padding: 6% 0 6% 6%;
+}
+.main .home__header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.18;
+}
+.main .home__sub-header {
+  font-weight: 300;
+  padding: 4% 0 8%;
+}
+.main .home__arrow {
+  padding: 11% 0 8%;
+}
+.main .lets-talk {
+  padding: 8.5% 5.5%;
+}
+.main .lets-talk__text {
+  color: #0019a5;
+  line-height: 1.57;
+  padding-bottom: 6%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.main .think-about__text-container {
+  background-color: #010766;
+  color: #ffffff;
+  text-align: left;
+}
+.main .think-about__header {
+  font-weight: 600;
+  padding: 8.5% 5.5% 0;
+}
+.main .think-about__text {
+  font-weight: 400;
+  padding: 8% 5.5% 2%;
+}
+.main .think-about__icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  width: 75%;
+  padding-bottom: 8%;
+}
+.main .think-about__icon {
+  padding-top: 0.75rem;
+}
+.main .think-about__icon--devices {
+  grid-area: 1/1/span 1/span 1;
+}
+.main .think-about__icon--people {
+  grid-area: 1/2/span 1/span 1;
+}
+.main .think-about__icon--security {
+  grid-area: 1/3/span 1/span 1;
+}
+.main .think-about__icon--how {
+  grid-area: 3/1/span 1/span 1;
+}
+.main .think-about__icon--who {
+  grid-area: 3/2/span 1/span 1;
+}
+.main .think-about__icon--where {
+  grid-area: 3/3/span 1/span 1;
+}
+.main .think-about__icon-tag {
+  color: #fad40f;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+.main .think-about__icon-tag--devices {
+  grid-area: 2/1/span 1/span 1;
+}
+.main .think-about__icon-tag--people {
+  grid-area: 2/2/span 1/span 1;
+}
+.main .think-about__icon-tag--security {
+  grid-area: 2/3/span 1/span 1;
+}
+.main .think-about__icon-tag--how {
+  grid-area: 4/1/span 1/span 1;
+}
+.main .think-about__icon-tag--who {
+  grid-area: 4/2/span 1/span 1;
+}
+.main .think-about__icon-tag--where {
+  grid-area: 4/3/span 1/span 1;
+}
+.main .think-about__img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+}
+.main .success {
+  color: #0019a5;
+  padding: 7% 5.5% 13%;
+}
+.main .success__icon {
+  width: 30%;
+  padding-bottom: 2%;
+}
+.main .success__text-container {
+  text-align: left;
+}
+.main .success__text {
+  font-weight: 500;
+}
+.main .how {
+  background-color: #0090d0;
+  color: #ffffff;
+  padding: 8.5% 5.5%;
+}
+.main .how__text {
+  padding: 6% 8%;
+}
+.main .how__img {
+  width: 100%;
+  padding: 5% 0;
+}
+.main .how__note {
+  font-size: 0.5rem;
+  padding-top: 4%;
+  text-align: left;
+  font-weight: 300;
+}
+.main .advisors {
+  background-color: #b1e4e3;
+  color: #0019a5;
+}
+.main .advisors__text-container {
+  padding: 10% 5.5% 0;
+  text-align: left;
+}
+.main .advisors__header {
+  line-height: 1.75rem;
+  padding-bottom: 8%;
+}
+.main .advisors__text {
+  font-weight: 500;
+}
+.main .advisors__img {
+  width: 100%;
+}
+.main .summary {
+  color: #000066;
+  padding: 8.5% 5.5%;
+}
+.main .summary__header {
+  line-height: 1.75rem;
+  padding-bottom: 8%;
+}
+.main .summary__text {
+  font-weight: 600;
+  padding-bottom: 5%;
+}
+.main .summary__icon {
+  width: 40%;
+  vertical-align: bottom;
+}
+.main .summary__note {
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-top: 4.5%;
+}
+.main .contact {
+  background: linear-gradient(to bottom, #010766 0%, #0090d0 50%, #B1E4E3 100%);
+  color: #ffffff;
+  padding: 8.5% 5.5% 5%;
+  text-align: left;
+}
+.main .contact__header {
+  padding-bottom: 8%;
+}
+.main .contact__form {
+  padding-top: 18%;
+}
+.main .contact label {
+  font-size: 0.9rem;
+}
+.main .contact input {
+  width: 100%;
+  height: 3.1rem;
+  border-radius: 8px;
+  border-style: none;
+  opacity: 40%;
+  margin: 1.5% 0 10.5%;
+}
+.main .contact textarea {
+  width: 100%;
+  border-radius: 8px;
+  border-style: none;
+  opacity: 40%;
+  margin: 1.5% 0 0;
+}
+.main .contact__note {
+  font-size: 0.6rem;
+  padding: 7.5% 0;
+}
+.main .contact__link {
+  color: #ffc548;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #000066;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 5.5% 5.5% 7%;
+}
+.footer__line {
+  width: 100%;
+}
+.footer__list {
+  line-height: 2rem;
+}
+.footer__list-item {
+  list-style: none;
+}
+.footer__copyright {
+  padding: 6% 0 0;
+}
+.footer__social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  padding: 5.5% 0 9%;
+}
+.footer__social-icon {
+  width: 18%;
+  height: 100%;
+}
+.footer__logo-telefonica {
+  width: 22.5%;
+}
+
+.button {
+  background-color: #ffc548;
+  color: #000066;
+  border-radius: 8px;
+  border-style: none;
+  padding: 0.8rem 1.75rem 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+.nav {
+  position: fixed;
+  z-index: 2;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+}
+.nav__list-item:hover {
+  background-color: #0090d0;
 }

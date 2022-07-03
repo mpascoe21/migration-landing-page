@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+$font-family: 'Hind', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semiBold: 600;
+$font-weight-bold: 700;
+
+
+$color-blue-primary: #0019a5;
+$color-blue-secondary: #000066;
+$color-blue-tertiary: #010766;
+$color-blue-pacific: #0090d0;
+$color-blue-powder: #b1e4e3;
+$color-white: #ffffff;
+$color-yellow-primary: #ffc548;
+$color-yellow-secondary: #fad40f;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family;
 }
+
+

@@ -1,0 +1,372 @@
+.nav {
+  background-color: $color-blue-secondary;
+  width: 100vw;
+  position: fixed;
+  
+  &__list-item {
+    list-style: none;
+    padding: 3%;
+    cursor: pointer;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 0.6rem;
+  } 
+}
+
+.main {
+  text-align: center;  
+
+  .home {
+    background-color: $color-blue-primary;
+    color: $color-white;
+    display: grid;
+    justify-items: center;
+    padding: 0 8.5%;
+
+    &__logo-container {
+      display: grid;
+      width: 60%;
+      height: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+    }
+    
+    &__bubbles {
+      width: 6.8rem;
+      height: 75%;
+      object-fit: cover; 
+      padding-bottom: 10%;
+      grid-area: 1 / 2 / span 2 / span 2;
+    }
+  
+    &__logo {
+      width: 3.125rem;
+      grid-area: 3 / 2 / 2 / span 1;
+      align-self: center;
+      align-self: center;
+      z-index: 5;
+    }
+  
+    &__img {
+      width: 120%;
+      padding: 6% 0 6% 6%;
+    }
+
+    &__header {
+      font-size: 1.75rem;
+      font-weight: $font-weight-semiBold;
+      line-height: 1.18;
+    }
+
+    &__sub-header {
+      font-weight: $font-weight-light;
+      padding: 4% 0 8%;
+    }
+
+    &__arrow {
+      padding: 11% 0 8%;
+    }
+  }
+
+  .lets-talk {
+    padding: 8.5% 5.5%;
+
+    &__text {
+      color: $color-blue-primary;
+      line-height: 1.57;
+      padding-bottom: 6%;
+      font-size: 0.9rem;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  .think-about {
+    &__text-container {
+      background-color: $color-blue-tertiary;
+      color: $color-white;      
+      text-align: left;
+    }
+
+    &__header {
+      font-weight: $font-weight-semiBold;
+      padding: 8.5% 5.5% 0;
+    }
+
+    &__text {
+      font-weight: $font-weight-regular;
+      padding: 8% 5.5% 2%;
+    }
+
+    &__icon-container {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(4, auto); 
+      justify-items: center;  
+      width: 75%;  
+      padding-bottom: 8%;
+    }
+
+    &__icon {
+      padding-top: 0.75rem;
+
+      &--devices {
+        grid-area: 1 / 1 / span 1 / span 1;
+      }
+
+      &--people {
+        grid-area: 1 / 2 / span 1 / span 1;
+      }
+
+      &--security {
+        grid-area: 1 / 3 / span 1 / span 1;
+      }
+
+      &--how {
+        grid-area: 3 / 1 / span 1 / span 1;
+      }
+
+      &--who {
+        grid-area: 3 / 2 / span 1 / span 1;
+      }
+
+      &--where {
+        grid-area: 3 / 3 / span 1 / span 1;
+      }
+
+    }
+
+    &__icon-tag {
+      color: $color-yellow-secondary;
+      font-size: 0.85rem;
+      font-weight: $font-weight-light;
+      padding-top: 0.5rem;
+      
+      &--devices {
+        grid-area: 2 / 1 / span 1 / span 1;
+      }
+
+      &--people {
+        grid-area: 2 / 2 / span 1 / span 1;
+      }
+
+      &--security {
+        grid-area: 2 / 3 / span 1 / span 1;
+      }
+
+      &--how {
+        grid-area: 4 / 1 / span 1 / span 1;
+      }
+
+      &--who {
+        grid-area: 4 / 2 / span 1 / span 1;
+      }
+
+      &--where {
+        grid-area: 4 / 3 / span 1 / span 1;        
+      }
+    }     
+  
+    &__img {
+      width: 100%;
+      height: 25vh;
+      object-fit: cover;
+    }     
+  }  
+  
+  .success {
+    color: $color-blue-primary;
+    padding: 7% 5.5% 13%;
+
+    &__icon {
+      width: 30%;
+      padding-bottom: 2%;
+    }
+
+    &__text-container {
+      text-align: left;
+    }
+
+    &__text {
+      font-weight: $font-weight-medium;
+    }
+  }
+  
+  .how {
+    background-color: $color-blue-pacific;
+    color: $color-white;
+    padding: 8.5% 5.5%;
+
+    &__text {
+      padding: 6% 8%;
+    }
+
+    &__img {
+      width: 100%;
+      padding: 5% 0;
+    }
+
+    &__note {
+      font-size: 0.5rem;
+      padding-top: 4%;
+      text-align: left;
+      font-weight: $font-weight-light;
+    }
+  }
+  
+  .advisors {
+    background-color: $color-blue-powder;
+    color: $color-blue-primary;    
+
+    &__text-container {
+      padding: 10% 5.5% 0;
+      text-align: left;
+    }
+
+    &__header {      
+      line-height: 1.75rem;
+      padding-bottom: 8%;
+    }
+
+    &__text {
+      font-weight: $font-weight-medium;      
+    }
+  
+    &__img {
+      width: 100%;
+    }
+  }
+  
+  .summary {
+    color: $color-blue-secondary;
+    padding: 8.5% 5.5%;
+
+    &__header {
+      line-height: 1.75rem;
+      padding-bottom: 8%;
+      
+    }
+
+    &__text {
+      font-weight: $font-weight-semiBold;
+      padding-bottom: 5%;
+    }
+
+    &__icon {
+      width: 40%;
+      vertical-align: bottom;
+    }
+
+    &__note {
+      font-weight: $font-weight-medium;
+      font-size: 0.75rem;
+      padding-top: 4.5%;
+    }
+  }
+  
+  .contact {
+    background: linear-gradient(to bottom, #010766 0%, #0090d0 50%, #B1E4E3 100%);
+    color: $color-white;
+    padding: 8.5% 5.5% 5%;
+    text-align: left;
+
+    &__header {
+      padding-bottom: 8%;
+    }
+
+    &__form {
+      padding-top: 18%;
+    }
+
+    label {
+      font-size: 0.9rem;
+    }
+
+    input {
+      width: 100%;
+      height: 3.1rem;
+      border-radius: 8px;
+      border-style: none;
+      opacity: 40%;
+      margin: 1.5% 0 10.5%;
+    }
+
+    textarea {
+      width: 100%;
+      border-radius: 8px;
+      border-style: none;
+      opacity: 40%;
+      margin: 1.5% 0 0;
+    }
+
+    &__note {
+      font-size: 0.6rem;
+      padding: 7.5% 0;
+    }
+
+    &__link {
+      color: $color-yellow-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer {
+  background-color: $color-blue-secondary;
+  color: $color-white;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 5.5% 5.5% 7%;
+
+  &__line {
+    width: 100%;
+  }
+
+  &__list {
+    line-height: 2rem;
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__copyright {
+    padding: 6% 0 0;
+  }
+
+  &__social-container {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    padding: 5.5% 0 9%;
+  }
+
+  &__social-icon {
+    width: 18%;
+    height: 100%;
+  }
+
+  &__logo-telefonica {
+    width: 22.5%;
+  }
+}
+
+.button {
+  background-color: $color-yellow-primary;
+  color: $color-blue-secondary;
+  border-radius: 8px;
+  border-style: none;
+  padding: 0.8rem 1.75rem 0.5rem;
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
