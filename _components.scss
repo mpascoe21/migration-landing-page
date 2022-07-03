@@ -310,6 +310,10 @@
     &__link {
       color: $color-yellow-primary;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -331,6 +335,15 @@
 
   &__list-item {
     list-style: none;
+    
+    a {
+      color: $color-white;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 50%;
+      }
+    }
   }
 
   &__copyright {
@@ -349,10 +362,18 @@
   &__social-icon {
     width: 18%;
     height: 100%;
+
+    &:hover {
+      opacity: 50%;
+    }
   }
 
   &__logo-telefonica {
     width: 22.5%;
+
+    &:hover {
+      opacity: 50%;
+    }
   }
 }
 
@@ -369,4 +390,8 @@
   align-items: center;
   line-height: 1.25rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-blue-powder;
+  }
 }
