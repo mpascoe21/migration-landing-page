@@ -1,5 +1,302 @@
 @media screen and (min-width: 768px) {
 
+  .nav {
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .main {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .home {
+
+      &__header {
+        font-size: 3.1rem;
+      }
+
+      &__sub-header {
+        font-size: 1.75rem;
+        padding: 3% 0 4%;
+      }
+
+      &__arrow {
+        padding: 7% 0 3%;
+      }
+    }
+
+    .lets-talk {
+      padding: 8% 12.75%;
+  
+      &__text {
+        padding-bottom: 3.5%;
+        font-size: 1.125rem;
+      }
+    }
+
+    .think-about {
+      &__text-container {
+        padding: 0 10%;
+      }
+      
+      &__header {
+        //font-weight: $font-weight-semiBold;
+        padding: 8.5% 0 0;
+      }
+
+      &__text {
+        font-size: 1.125rem;
+        padding: 4% 0 6%;
+      }
+
+      &__icon-container {
+        //display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(2, auto); 
+        //justify-items: center;  
+        width: 75%;  
+        padding-bottom: 8%;
+      }
+
+      &__icon {
+        padding-top: 0;
+  
+        &--devices {
+          grid-area: 1 / 1 / span 1 / span 1;
+        }
+  
+        &--people {
+          grid-area: 1 / 2 / span 1 / span 1;
+        }
+  
+        &--security {
+          grid-area: 1 / 3 / span 1 / span 1;
+        }
+  
+        &--how {
+          grid-area: 1 / 4 / span 1 / span 1;
+        }
+  
+        &--who {
+          grid-area: 1 / 5 / span 1 / span 1;
+        }
+  
+        &--where {
+          grid-area: 1 / 6 / span 1 / span 1;
+        }
+      }
+
+      &__icon-tag {
+        // color: $color-yellow-secondary;
+        // font-size: 0.85rem;
+        // font-weight: $font-weight-light;
+        // padding-top: 0.5rem;
+        
+        &--devices {
+          grid-area: 2 / 1 / span 1 / span 1;
+        }
+  
+        &--people {
+          grid-area: 2 / 2 / span 1 / span 1;
+        }
+  
+        &--security {
+          grid-area: 2 / 3 / span 1 / span 1;
+        }
+  
+        &--how {
+          grid-area: 2 / 4 / span 1 / span 1;
+        }
+  
+        &--who {
+          grid-area: 2 / 5 / span 1 / span 1;
+        }
+  
+        &--where {
+          grid-area: 2 / 6 / span 1 / span 1;        
+        }
+      } 
+
+      &__img {
+        //width: 100%;
+        height: 40vh;
+        //object-fit: cover;
+      }  
+    }
+
+    .success {
+      &__icon {
+        width: 21%;
+        //padding-bottom: 2%;
+      }
+
+      &__text {
+        font-size: 1.125rem;
+      }
+    }
+
+    .how {
+      &__text {
+        padding: 2% 8%;
+        font-size: 1.125rem;
+      }
+
+      &__img {
+        padding: 0;
+      }
+
+      &__note {
+        padding-top: 0;
+      }
+    }
+
+    .advisors {
+      &__text-container {
+        padding: 10% 12% 0 10%;
+        //text-align: left;
+      }
+
+      &__text {
+        font-size: 1.125rem;
+        padding-bottom: 5%;
+      }
+
+      &__img {
+        width: 53%;
+      }
+    }
+
+    .summary {
+      //padding: 10%;
+
+      &__header {
+        padding-bottom: 6%;      
+      }
+
+      &__icon-container {
+        width: 42vw;
+        margin: auto;
+      }
+
+      &__text {
+        font-size: 1.125rem;
+
+        &--intro {
+          padding: 0 4.5% 4% 4.5%;
+        }
+
+        &--icon {
+          font-size: 1rem;
+        }
+      }
+
+      &__icon {
+        width: 46.2%;
+      }
+
+      &__icon-header {
+        font-size: 1.6rem; 
+      }
+
+      &__note {
+      }
+    }
+
+    .contact {
+      padding: 8% 13% 8%;
+
+      &__header {
+        padding-bottom: 5.5%;
+      }
+
+      &__text {
+        font-size: 1.125rem;
+        width: 50vw;
+      }
+
+      &__form {
+        padding-top: 9%;
+      }
+
+      label {
+        font-size: 1rem;
+      }
+
+      input {
+        margin: 1.5% 0 5.5%;
+      }
+
+      &__comments {
+        height: 14vh;
+      }
+
+      &__button-container {
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6% 0 8%;
+      }
+
+      &__note {
+        font-size: 0.75rem;
+        padding: 0;
+      }
+    }
+  }
+
+  .footer {
+    text-align: left;
+    padding: 4% 5.25%;
+
+    &__list {
+      display: inline-flex;
+    }
+
+    &__list-item + &__list-item::before {
+      content: ' | ';
+      padding: 0 0.5rem;
+    }
+
+    &__copyright {
+      padding: 2% 0 0;
+    }
+
+    &__social-logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding-top: 2%;
+    }
+
+    &__social-container {
+      justify-content: space-between;
+      justify-items: start;
+      margin: 0;
+      width: 20%;
+      padding: 0;
+    }
+
+    // &__social-icon {
+    //   width: 9%;
+    // }
+
+    &__logo-telefonica {
+      width: 17%;
+      //height: 100%;
+    }
+  }
+
+  .button {
+    height: 3rem;
+    padding: 1rem 1.8rem 0.7rem;
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
