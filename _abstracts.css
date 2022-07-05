@@ -81,6 +81,9 @@
   .main .think-about__img {
     height: 40vh;
   }
+  .main .success {
+    padding: 7.5% 12% 8% 10%;
+  }
   .main .success__icon {
     width: 21%;
   }
@@ -200,5 +203,218 @@
     height: 3rem;
     padding: 1rem 1.8rem 0.7rem;
     font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .nav__list-item {
+    padding: 2%;
+  }
+
+  .main h2 {
+    font-size: 3.125rem;
+  }
+  .main .home {
+    padding: 0;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .main .home__logo-container {
+    grid-area: 1/2/span 2/span 2;
+  }
+  .main .home__bubbles {
+    width: 17.5vw;
+  }
+  .main .home__logo {
+    width: 7.8vw;
+  }
+  .main .home__img {
+    height: 95vh;
+    width: auto;
+    padding: 6% 0 0 6%;
+    grid-area: 1/3/span 6/span 2;
+    align-self: end;
+  }
+  .main .home__contents-container {
+    width: 30vw;
+    text-align: left;
+    align-self: center;
+    justify-self: end;
+    grid-area: 3/1/span 3/span 2;
+  }
+  .main .home__header {
+    font-size: 4.5rem;
+  }
+  .main .home__sub-header {
+    font-size: 2.5rem;
+    width: 25vw;
+    line-height: 1.18;
+  }
+  .main .home__arrow {
+    padding: 11% 0 0;
+    grid-area: 6/2/span 1/span 2;
+  }
+  .main .lets-talk {
+    padding: 4% 19%;
+  }
+  .main .lets-talk__text {
+    padding-bottom: 2.5%;
+    font-size: 1.4rem;
+  }
+  .main .think-about {
+    display: inline-flex;
+  }
+  .main .think-about__text-container {
+    width: 50%;
+    padding: 0 8%;
+  }
+  .main .think-about__text {
+    font-size: 1.4rem;
+  }
+  .main .think-about__icon-container {
+    width: 100%;
+    padding-bottom: 6%;
+    justify-content: space-between;
+  }
+  .main .think-about__icon {
+    height: 4rem;
+  }
+  .main .think-about__icon-tag {
+    font-size: 1.25rem;
+  }
+  .main .think-about__img {
+    width: 50%;
+    height: auto;
+  }
+  .main .success {
+    padding: 4% 19%;
+    display: inline-flex;
+    gap: 3.5%;
+    justify-content: center;
+  }
+  .main .success__icon {
+    width: auto;
+    height: 7.5vw;
+    padding-bottom: 0;
+  }
+  .main .success__text-container {
+    width: 50%;
+  }
+  .main .success__header {
+    font-size: 2.5rem;
+  }
+  .main .how {
+    padding: 3% 5.5%;
+  }
+  .main .how__text {
+    width: 59%;
+    margin: auto;
+  }
+  .main .how__img {
+    width: 59%;
+    padding-right: 10%;
+  }
+  .main .how__note {
+    font-size: 0.75rem;
+    width: 50%;
+    margin: auto;
+  }
+  .main .advisors {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .main .advisors__text-container {
+    padding: 0 0 0;
+    width: 50%;
+  }
+  .main .advisors__header {
+    line-height: 3.5rem;
+    padding-bottom: 4%;
+    width: 24.4vw;
+  }
+  .main .advisors__text {
+    width: 24.4vw;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+    line-height: 1.36;
+  }
+  .main .advisors__img {
+    width: 35%;
+    margin: auto;
+    padding-top: 2%;
+  }
+  .main .summary {
+    padding: 3% 0;
+  }
+  .main .summary__header {
+    padding-bottom: 1.75%;
+  }
+  .main .summary__icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    justify-items: center;
+    width: 71vw;
+    column-gap: 10vw;
+  }
+  .main .summary__text--intro {
+    width: 55vw;
+    margin: auto;
+    font-size: 1.4rem;
+    line-height: 1.36;
+  }
+  .main .summary__note {
+    padding-top: 4%;
+  }
+  .main .contact {
+    display: inline-flex;
+    padding: 5.75% 11.2%;
+  }
+  .main .contact__header-container {
+    width: 50%;
+  }
+  .main .contact__text {
+    width: 30vw;
+    font-size: 1.4rem;
+  }
+  .main .contact__form {
+    padding-top: 0;
+    width: 50%;
+  }
+  .main .contact label {
+    font-size: 1rem;
+  }
+  .main .contact__button-container {
+    padding: 8% 0 8.5%;
+  }
+  .main .contact__note {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 2.75% 17%;
+  }
+  .footer__policies-container {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 0.5%;
+  }
+  .footer__copyright {
+    padding: 0;
+    padding-left: 1rem;
+  }
+  .footer__social-container {
+    width: 10%;
+  }
+  .footer__social-icon {
+    width: 1.45rem;
+  }
+  .footer__logo-telefonica {
+    width: 9%;
   }
 }
