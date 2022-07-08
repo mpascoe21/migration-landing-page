@@ -12,10 +12,10 @@
   <body>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__list-item"><a href="">Flexible Solutions</a></li>
-        <li class="nav__list-item"><a href="">Security</a></li>
-        <li class="nav__list-item"><a href="">Migration</a></li>
-        <li class="nav__list-item"><a href="">Contact us</a></li>
+        <li class="nav__list-item"><a href="#">Flexible Solutions</a></li>
+        <li class="nav__list-item"><a href="#">Security</a></li>
+        <li class="nav__list-item"><a href="#">Migration</a></li>
+        <li class="nav__list-item"><a href="#">Contact us</a></li>
       </ul>
     </nav>
 
@@ -24,7 +24,7 @@
         <div class="home__logo-container">
           <img
             class="home__bubbles"
-            src="./assets/images/O2 Cluster Bubble - 500px - RGB@3x.png"
+            src="./assets/images/o2-cluster-bubble-500px-rgb@3x.png"
             alt="bubbles"
           />
           <img
@@ -35,7 +35,7 @@
         </div>
         <img
           class="home__img"
-          src="./assets/images/O2 Heroes_Key Visual 3_Tablet_GRAD@3x.png"
+          src="./assets/images/o2-heroes-key-visual-3-tablet-grad@3x.png"
           alt="business-lady"
         />
         <div class="home__contents-container">
@@ -72,7 +72,7 @@
           <div class="think-about__icon-container">
             <img
               class="think-about__icon think-about__icon--devices"
-              src="./assets/images/-_Devices white.png"
+              src="./assets/images/icon-devices.png"
               alt="icon-devices"
             />
             <span class="think-about__icon-tag think-about__icon-tag--devices"
@@ -80,7 +80,7 @@
             >
             <img
               class="think-about__icon think-about__icon--people"
-              src="./assets/images/_People white.png"
+              src="./assets/images/icon-people.png"
               alt="icon-people"
             />
             <span class="think-about__icon-tag think-about__icon-tag--people"
@@ -88,7 +88,7 @@
             >
             <img
               class="think-about__icon think-about__icon--security"
-              src="./assets/images/_Security white-25.png"
+              src="./assets/images/icon-security.png"
               alt="icon-security"
             />
             <span class="think-about__icon-tag think-about__icon-tag--security"
@@ -96,7 +96,7 @@
             >
             <img
               class="think-about__icon think-about__icon--how"
-              src="./assets/images/_How white.png"
+              src="./assets/images/icon-how.png"
               alt="icon-how"
             />
             <span class="think-about__icon-tag think-about__icon-tag--how"
@@ -104,7 +104,7 @@
             >
             <img
               class="think-about__icon think-about__icon--who"
-              src="./assets/images/_Who white.png"
+              src="./assets/images/icon-who.png"
               alt="icon-who"
             />
             <span class="think-about__icon-tag think-about__icon-tag--who"
@@ -112,7 +112,7 @@
             >
             <img
               class="think-about__icon think-about__icon--where"
-              src="./assets/images/_Where white.png"
+              src="./assets/images/icon-where.png"
               alt="icon-where"
             />
             <span class="think-about__icon-tag think-about__icon-tag--where"
@@ -122,7 +122,7 @@
         </section>
         <img
           class="think-about__img"
-          src="./assets/images/108290_GettyImages-503418498_RT@3x.png"
+          src="./assets/images/108290-getty-images-503418498-rt@3x.png"
           alt=""
         />
       </div>
@@ -233,15 +233,18 @@
         </div>
         <form class="contact__form" action="">
           <label for="">Business type*</label>
-          <input type="text" />
+          <input type="text" required minlength="2" />
+          <div class="contact__error"></div>
           <label for="">First name*</label>
-          <input type="text" />
+          <input type="text" required minlength="1" />
+          <div class="contact__error"></div>
           <label for="">Last Name</label>
           <input type="text" />
           <label for="">Business email address*</label>
-          <input type="email" />
+          <input type="email" required minlength="1" />
+          <div class="contact__error"></div>
           <label for="">Contact tel number</label>
-          <input type="number" />
+          <input type="text" />
           <label for="">Organisation name</label>
           <input type="text" />
           <label for="">Organisation postcode</label>
@@ -265,8 +268,8 @@
             stuff we’re doing by email or phone as your details will be added to
             our business marketing database. You can opt-out of receiving
             communications at any time by visiting our
-            <a href="" class="contact__link">Preference Centre</a>. Our
-            <a href="" class="contact__link">Privacy Policy.</a>
+            <a href="#" class="contact__link">Preference Centre</a>. Our
+            <a href="#" class="contact__link">Privacy Policy.</a>
           </p>
         </form>
       </section>
@@ -276,13 +279,13 @@
       <img class="footer__line" src="./assets/images/line@3x.png" alt="line" />
       <div class="footer__policies-container">
         <ul class="footer__list">
-          <li class="footer__list-item"><a href="">Terms & Conditions</a></li>
-          <li class="footer__list-item"><a href="">Privacy policy</a></li>
-          <li class="footer__list-item"><a href="">Cookie policy</a></li>
+          <li class="footer__list-item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer__list-item"><a href="#">Privacy policy</a></li>
+          <li class="footer__list-item"><a href="#">Cookie policy</a></li>
           <li class="footer__list-item">
             <a href="">Modern Slavery Statement</a>
           </li>
-          <li class="footer__list-item"><a href="">Access for all</a></li>
+          <li class="footer__list-item"><a href="#">Access for all</a></li>
         </ul>
         <p class="footer__copyright">© 2020 Telefonica UK Limited.</p>
       </div>

@@ -6,9 +6,47 @@ const getInTouchBtn = document.querySelector(".button--get-in-touch");
 const contactForm = document.querySelector(".contact__form");
 const contactHeader = document.querySelector(".contact__header");
 const contactText = document.querySelector(".contact__text");
+const formInputs = document.querySelectorAll("input");
+const inputError = document.querySelectorAll(".error");
+
+formInputs.forEach((formInput) => {
+  formInput.addEventListener("input", (event) => {
+    let inputValue = event.target.value;
+
+    if (inputValue != undefined && inputValue.length > 0) {
+      event.target.innerHTML = "*Error";
+    }
+  });
+});
+
+// if (formInputs === "" || formInputs === null) {
+//   console.log("missing");
+// }
+
+// input.addEventListener("invalid", (event) => {
+//   if (event.target.innerHTML === "") {
+//     console.log("missing");
+//   }
+// });
+const validateForm = (e) => {
+  // e.preventDefault();
+  formInputs.forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let inputValue = e.target.value;
+      console.log(inputValue);
+
+      if (inputValue.length < 1) {
+        //input.nextElementSibling.innerHTML = "*Error";
+        e.target.innerHTML = "*Error";
+      }
+    });
+  });
+};
 
 const submitContactForm = () => {
+  //e.preventDefault();
   getInTouchBtn.addEventListener("click", () => {
+    validateForm();
     contactForm.innerHTML = "";
     contactHeader.innerHTML = "Thank you for your submission";
     contactText.innerHTML =
