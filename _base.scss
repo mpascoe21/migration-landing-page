@@ -17,6 +17,7 @@ $color-blue-powder: #b1e4e3;
 $color-white: #ffffff;
 $color-yellow-primary: #ffc548;
 $color-yellow-secondary: #fad40f;
+$color-red: #f4364c;
 
 * {
   margin: 0;
@@ -25,9 +26,17 @@ $color-yellow-secondary: #fad40f;
   font-family: $font-family;
 }
 
+html {
+  font-size: 16px;
+}
+
 a:any-link {
   text-decoration: none;
   
+}
+
+.form-error {
+  border: 1px solid #f4364c;
 }
 
 

@@ -7,7 +7,27 @@ var thinkAboutText = document.querySelector(".think-about__text");
 var getInTouchBtn = document.querySelector(".button--get-in-touch");
 var contactForm = document.querySelector(".contact__form");
 var contactHeader = document.querySelector(".contact__header");
-var contactText = document.querySelector(".contact__text");
+var contactText = document.querySelector(".contact__text"); // let formInputs = document.querySelector("input");
+// formInputs.forEach((formInput) => {
+//   formInput.addEventListener("input", (event) => {
+//     let inputValue = event.target.value;
+//     if (inputValue != undefined && inputValue.length > 0) {
+//       event.target.classList.remove("invalid");
+//       event.target.classList.add("valid");
+//     } else {
+//       event.target.classList.remove("valid");
+//       event.target.classList.add("invalid");
+//     }
+//   });
+// });
+// if (formInputs === "" || formInputs === null) {
+//   console.log("missing");
+// }
+// input.addEventListener("invalid", (event) => {
+//   if (event.target.innerHTML === "") {
+//     console.log("missing");
+//   }
+// });
 
 var submitContactForm = function submitContactForm() {
   getInTouchBtn.addEventListener("click", function () {
